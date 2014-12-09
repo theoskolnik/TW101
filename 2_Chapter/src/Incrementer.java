@@ -6,7 +6,13 @@
 // and prints out that number when you call total().
 
 public class Incrementer {
+    int counter;
 
+    public void increment() {
+        counter++;
+    }
 
-
+    public void total() {
+        System.out.println(counter);
+    }
 }
