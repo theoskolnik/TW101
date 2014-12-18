@@ -10,11 +10,6 @@ public class Rectangle {
     int height;
     int width;
 
-    public Rectangle(int h, int w) {
-        this.height = h;
-        this.width = w;
-    }
-
     public int area() {
        int area = height * width;
        return area;
