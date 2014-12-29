@@ -17,8 +17,12 @@ public class Main {
             m.takeDamage(10);
         }
 
-        System.out.println(monsters.get(0).currentHitpoints());
-        System.out.println(monsters.get(1).currentHitpoints());
-
+        for (Monster m : monsters) {
+            if(m.currentHitpoints() > 0) {
+                System.out.println(m.name() + " has " + m.currentHitpoints() + " hitpoints.");
+            } else {
+                System.out.println(m.name() + " has no more hitpoints.");
+            }
+        }
     }
 }

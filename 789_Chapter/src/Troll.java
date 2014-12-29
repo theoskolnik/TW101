@@ -10,7 +10,8 @@ public class Troll implements Monster {
     }
 
     public void takeDamage(int amount){
-        hitpoints -= 10;
+        int newAmount = amount / 2;
+        hitpoints -= newAmount;
     }
 
     public String name() {
