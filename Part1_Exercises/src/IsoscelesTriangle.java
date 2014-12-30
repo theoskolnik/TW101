@@ -2,24 +2,33 @@
  * Created by theodoraskolnik on 12/30/14.
  */
 public class IsoscelesTriangle {
+    public int maxStars;
 
-    public void numLines(int n) {
-//    for the number of lines
-//    print the spaces and the asterisk
-//    repeat until reach number of lines
+    public int setMaxStars(int n) {
+        int maxStars = 1;
+        for (int i = 1; i < n; i++) {
+            maxStars += 2;
+        }
+        return maxStars;
     }
 
-    public void spaces(int n) {
+    public void numLines(int n) {
+        int spaces = setMaxStars(n) / 2;
+        for (int i = 1; i < (n * 2); i += 2) {
+            for (int j = 0; j < spaces; j++) {
+                System.out.print(" ");
+            }
+            spaces--;
 
-//    find num spaces for first star
-
-        int spaces = n / 2;
-        System.out.print(spaces);
-
+            for (int k = 0; k < i; k++) {
+                System.out.print("*");
+            }
+        System.out.println("");
+        }
     }
 
     public static void main(String[] args) {
         IsoscelesTriangle i = new IsoscelesTriangle();
-        i.numLines(7);
+        i.numLines(3);
     }
 }
