@@ -9,7 +9,7 @@ public class Diamond {
         setMaxStars(n);
         setSpaces();
         printTop(n);
-        printMiddle(n);
+        printMiddle();
         printBottom(n);
     }
 
@@ -42,15 +42,15 @@ public class Diamond {
         }
     }
 
-    public void printMiddle(int n) {
+    public void printMiddle() {
         for (int i = 0; i < maxStars; i++) {
             System.out.print("*");
         }
         System.out.println("");
+        spaces++;
     }
 
     public void printBottom(int n) {
-        spaces++;
         for (int i = 1; i < n; i++) {
             for (int j = 0; j < spaces; j++) {
                 System.out.print(" ");
@@ -68,6 +68,6 @@ public class Diamond {
 
     public static void main(String[] args) {
         Diamond i = new Diamond();
-        i.printDiamond(5);
+        i.printDiamond(3);
     }
 }

@@ -79,11 +79,11 @@
       <file leaf-file-name="Diamond.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Diamond.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.661157" vertical-offset="0" max-vertical-offset="1185">
-              <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+            <state vertical-scroll-proportion="0.75206614" vertical-offset="822" max-vertical-offset="1185">
+              <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
               <folding>
-                <element signature="e#480#481#0" expanded="true" />
-                <element signature="e#517#518#0" expanded="true" />
+                <element signature="e#479#480#0" expanded="true" />
+                <element signature="e#516#517#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -536,11 +536,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Diamond.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.661157" vertical-offset="0" max-vertical-offset="1185">
-          <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.75206614" vertical-offset="822" max-vertical-offset="1185">
+          <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
           <folding>
-            <element signature="e#480#481#0" expanded="true" />
-            <element signature="e#517#518#0" expanded="true" />
+            <element signature="e#479#480#0" expanded="true" />
+            <element signature="e#516#517#0" expanded="true" />
           </folding>
         </state>
       </provider>
