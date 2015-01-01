@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Created by theodoraskolnik on 12/30/14.
@@ -7,20 +6,13 @@ import java.util.List;
 public class PrimeFactors {
 
     public void generate(int n) {
-        List<Integer> primeFactors = new ArrayList<Integer>();
+        ArrayList<Integer> primeFactors = new ArrayList<Integer>();
 
-        int divider = 2;
+        for (int i = 2; i <= n; i++) {
+            if ((n % i == 0) && isPrime(i)) {
+                primeFactors.add(i);
+                n /= i;
 
-        while (n > 2) {
-            if ((n % divider == 0) && (isPrime(divider))) {
-                primeFactors.add(divider);
-                n /= divider;
-                divider += 1;
-                generate(n);
-            } else {
-                while (!isPrime(divider)) {
-                    divider += 1;
-                }
             }
         }
 
@@ -37,7 +29,6 @@ public class PrimeFactors {
         }
         return false;
     }
-
 
     public static void main(String[] args) {
         PrimeFactors pf = new PrimeFactors();
