@@ -11,7 +11,7 @@ public class Orc implements Monster {
     }
 
     public void takeDamage(int amount){
-        hitpoints -= 10;
+        hitpoints -= amount;
     }
 
     public String name() {

@@ -7,11 +7,11 @@ public class Main {
     public static void main(String[] args) {
         ArrayList<Monster> monsters = new ArrayList<Monster>();
 
-        Orc o1 = new Orc();
-        monsters.add(o1);
+        Orc orc = new Orc();
+        monsters.add(orc);
 
-        Troll t1 = new Troll();
-        monsters.add(t1);
+        Troll troll = new Troll();
+        monsters.add(troll);
 
         for (Monster m : monsters) {
             m.takeDamage(10);
